@@ -4,13 +4,13 @@ Descargas oficiales de la app para Android: baja videos de YouTube y extrae la m
 
 ## Descargar
 
-**[Descargar la última versión (APK)](https://github.com/Jonayo/jonayodownloader-apk/releases/latest/download/jonayo-app.apk)**
+**[Descargar la última versión (APK)](https://github.com/Jonayo/jonayodownloader-apk/releases/download/v3.0.22/JYDownloader-v3.0.22.apk)**
 
 - Versión actual: **3.0.22** (2026-10-28)
 - Android 7.0 o superior (API 24) · arm64-v8a y armeabi-v7a
 - Actualizaciones automáticas desde la propia app
 
-También puedes abrir la pestaña **Releases** y bajar el archivo `JDownloader.vX.Y.Z.apk`, que es exactamente el mismo APK.
+También puedes abrir la pestaña **Releases** y bajar el archivo `JYDownloader-vX.Y.Z.apk`. El número del nombre es la versión: si tienes varios APK guardados, **el de número más alto es el más reciente**.
 
 ## Instalar
 
