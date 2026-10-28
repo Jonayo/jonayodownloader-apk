@@ -26,7 +26,7 @@ Al abrir, la app consulta esta página y, si hay una versión nueva, muestra un 
 
 - Reproductor de música con reproducción en segundo plano y cola de reproducción.
 - Mantén pulsada una canción o descarga para ver las opciones: reproducir, agregar a la cola, favoritos, abrir carpeta, borrar y editar nombre/artista.
-- Descargas de música con artista y carátula incluidos en el MP3, y agrupadas por artista.
-- Búsqueda ampliada, tema oscuro y correcciones del reproductor.
+- Descargas de música con el artista escrito en las etiquetas del MP3 y agrupadas por artista.
+- Búsqueda ampliada y correcciones del reproductor.
 
 > Solo se publica aquí, no hay versión en Play Store.
