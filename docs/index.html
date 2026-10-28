@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>J Youtube Downloader — Música y videos gratis, sin anuncios</title>
+<meta name="description" content="Descargá música en MP3 y videos sin anuncios. Reproductor en segundo plano, ecualizador y modo offline. APK gratis para Android.">
+<meta name="theme-color" content="#08090d">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="J Youtube Downloader">
+<meta property="og:title" content="J Youtube Downloader — Música y videos gratis, sin anuncios">
+<meta property="og:description" content="Descargá música en MP3 y videos sin anuncios. Reproductor en segundo plano, ecualizador y modo offline. Gratis para Android.">
+<meta property="og:image" content="https://jonayo.github.io/jonayodownloader-apk/img/og.jpg">
+<meta property="og:url" content="https://jonayo.github.io/jonayodownloader-apk/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/icon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
+<style>
+  :root{
+    --red:#ff2d4a;
+    --red-d:#e2143a;
+    --bg:#08090d;
+    --fg:#eef1f7;
+    --sub:#a9b0bf;
+    --line:rgba(255,255,255,.09);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:
+      radial-gradient(900px 520px at 50% -140px, rgba(255,45,74,.22), transparent 70%),
+      radial-gradient(700px 500px at 85% 22%, rgba(70,110,255,.10), transparent 70%),
+      var(--bg);
+    color:var(--fg);
+    font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    padding-bottom:calc(112px + env(safe-area-inset-bottom));
+  }
+  a{color:inherit}
+  img{display:block;max-width:100%;height:auto}
+
+  .wrap{max-width:1120px;margin:0 auto;padding:0 clamp(16px,4vw,28px)}
+
+  .hero{padding:clamp(28px,6vw,64px) 0 8px;text-align:center}
+  .brand{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--sub)}
+  .brand img{width:34px;height:34px;border-radius:9px}
+
+  h1{margin:22px auto 0;max-width:15ch;font-size:clamp(32px,6.4vw,62px);line-height:1.06;letter-spacing:-.02em}
+  h1 em{font-style:normal;color:var(--red)}
+  .lede{margin:18px auto 0;max-width:56ch;color:var(--sub);font-size:clamp(15px,2.1vw,18px)}
+
+  .pills{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:22px 0 0}
+  .pills span{padding:7px 14px;font-size:13px;color:#dfe3ec;background:rgba(255,255,255,.045);border:1px solid var(--line);border-radius:999px}
+
+  .actions{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:26px 0 0}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none;background:linear-gradient(180deg,#ff3d58,var(--red-d));color:#fff;box-shadow:0 12px 30px rgba(255,45,74,.32);transition:transform .18s ease,box-shadow .18s ease}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 16px 38px rgba(255,45,74,.42)}
+  .btn.ghost{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);box-shadow:none;font-weight:600}
+  .btn.ghost:hover{background:rgba(255,255,255,.09)}
+  .btn svg{flex:none}
+
+  .cover{position:relative;margin:clamp(28px,5vw,44px) 0 0}
+  .cover::before{content:"";position:absolute;inset:8% 6% -6%;background:radial-gradient(closest-side,rgba(255,45,74,.30),transparent 75%);filter:blur(28px);z-index:-1}
+  .cover img{width:100%;border-radius:20px;border:1px solid var(--line);box-shadow:0 34px 90px rgba(0,0,0,.6)}
+
+  section{padding:clamp(46px,7vw,78px) 0 0}
+  h2{margin:0;font-size:clamp(24px,3.6vw,36px);letter-spacing:-.015em}
+  .section-sub{margin:8px 0 0;color:var(--sub);font-size:15px}
+
+  .features ul{list-style:none;margin:26px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+  .features li{display:flex;align-items:center;gap:11px;padding:14px 16px;background:rgba(255,255,255,.035);border:1px solid var(--line);border-radius:14px;font-size:15px}
+  .features li::before{content:"";flex:none;width:20px;height:20px;border-radius:50%;background:var(--red);box-shadow:0 0 0 4px rgba(255,45,74,.14);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");background-size:12px 12px;background-position:center;background-repeat:no-repeat}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:clamp(10px,2vw,18px);margin-top:26px}
+  .grid figure{margin:0}
+  .grid img{width:100%;border-radius:14px;border:1px solid var(--line);box-shadow:0 12px 34px rgba(0,0,0,.42);background:#0d0f16}
+  .grid figcaption{margin-top:9px;font-size:13px;line-height:1.35;color:var(--sub);text-align:center}
+  .grid.squares{grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+
+  footer{margin-top:clamp(52px,8vw,84px);padding:28px 0 8px;border-top:1px solid var(--line);color:var(--sub);font-size:14px}
+  footer p{margin:6px 0}
+  footer a{color:#dfe3ec}
+
+  .sticky{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:60;display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:999px;background:linear-gradient(180deg,#ff3d58,var(--red-d));color:#fff;font-weight:700;font-size:16px;text-decoration:none;white-space:nowrap;box-shadow:0 14px 34px rgba(0,0,0,.55),0 8px 26px rgba(255,45,74,.45);transition:transform .18s ease,box-shadow .18s ease}
+  .sticky:hover{transform:translateX(-50%) translateY(-2px);box-shadow:0 18px 40px rgba(0,0,0,.6),0 10px 30px rgba(255,45,74,.55)}
+  @media (max-width:420px){
+    .sticky{width:calc(100% - 28px);justify-content:center;padding:15px 18px;font-size:15px}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero wrap">
+  <div class="brand"><img src="img/icon.png" alt="Ícono de J Youtube Downloader" width="34" height="34">J Youtube Downloader</div>
+
+  <h1>Música y videos, <em>gratis</em> y sin anuncios</h1>
+  <p class="lede">Descargá canciones en MP3, mirá videos sin publicidad y escuchá todo sin internet. Una sola app, sin cuentas ni suscripciones.</p>
+
+  <div class="pills">
+    <span>Android 7 o superior</span>
+    <span>Sin anuncios</span>
+    <span>Sin registro</span>
+  </div>
+
+  <div class="actions">
+    <a class="btn" href="https://github.com/Jonayo/jonayodownloader-apk/releases/latest">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+      Descarga gratis - Android
+    </a>
+    <a class="btn ghost" href="https://github.com/Jonayo/jonayodownloader-apk/releases">Ver todas las versiones</a>
+  </div>
+
+  <figure class="cover">
+    <img src="img/hero.jpg" width="1700" height="956" alt="J Youtube Downloader: pantallas de descargas, reproductor y música, con el nombre de la app">
+  </figure>
+</header>
+
+<section class="features wrap">
+  <ul>
+    <li>Descargá música en MP3</li>
+    <li>Mirá videos sin anuncios</li>
+    <li>Escuchá sin internet</li>
+    <li>Reproductor en segundo plano</li>
+    <li>Ecualizador con presets</li>
+    <li>Cola, favoritos e historial</li>
+  </ul>
+</section>
+
+<section class="gallery wrap">
+  <h2>Así se ve</h2>
+  <p class="section-sub">Capturas reales de la app.</p>
+  <div class="grid">
+    <figure><img src="img/s01.jpg" width="640" height="1137" loading="lazy" decoding="async" alt="Pantalla de inicio con los videos en tendencia"><figcaption>Explorá lo que es tendencia</figcaption></figure>
+    <figure><img src="img/s02.jpg" width="640" height="1137" loading="lazy" decoding="async" alt="Menú para reproducir, encolar o descargar un video"><figcaption>Elegí qué hacer con cada video</figcaption></figure>
+    <figure><img src="img/s03.jpg" width="640" height="1137" loading="lazy" decoding="async" alt="Lista de descargas con botones de reproducir y descargar"><figcaption>Descargá videos y música</figcaption></figure>
+    <figure><img src="img/s04.jpg" width="640" height="1137" loading="lazy" decoding="async" alt="Pantalla de música descargada para escuchar sin internet"><figcaption>Escuchá sin internet</figcaption></figure>
+    <figure><img src="img/s05.jpg" width="640" height="1137" loading="lazy" decoding="async" alt="Reproductor a pantalla completa con carátula y controles"><figcaption>Reproductor completo</figcaption></figure>
+    <figure><img src="img/s06.jpg" width="640" height="1137" loading="lazy" decoding="async" alt="Menú de pulsado largo con favoritos, cola, descargar y ecualizador"><figcaption>Mantené pulsado para más</figcaption></figure>
+    <figure><img src="img/s07.jpg" width="640" height="1137" loading="lazy" decoding="async" alt="Tarjeta de reproducción en la barra de notificaciones"><figcaption>Sigue en segundo plano</figcaption></figure>
+    <figure><img src="img/s08.jpg" width="640" height="1137" loading="lazy" decoding="async" alt="Controles de música en la pantalla bloqueada"><figcaption>Controlá desde la notificación</figcaption></figure>
+    <figure><img src="img/s09.jpg" width="640" height="1137" loading="lazy" decoding="async" alt="Pieza de la app: cero anuncios, cero suscripciones"><figcaption>Sin anuncios ni suscripciones</figcaption></figure>
+    <figure><img src="img/s10.jpg" width="640" height="1137" loading="lazy" decoding="async" alt="Pieza de cierre con los beneficios y el botón de descarga"><figcaption>Gratis, sin registro</figcaption></figure>
+  </div>
+</section>
+
+<section class="share wrap">
+  <h2>Listo para compartir</h2>
+  <p class="section-sub">Piezas cuadradas para grupos y redes.</p>
+  <div class="grid squares">
+    <figure><img src="img/g1.jpg" width="720" height="720" loading="lazy" decoding="async" alt="Poster con todos los beneficios de la app"><figcaption>Todo en una app</figcaption></figure>
+    <figure><img src="img/g2.jpg" width="720" height="720" loading="lazy" decoding="async" alt="Poster de música gratis con el reproductor"><figcaption>Música gratis</figcaption></figure>
+    <figure><img src="img/g3.jpg" width="720" height="720" loading="lazy" decoding="async" alt="Poster de videos sin anuncios con la búsqueda"><figcaption>Videos sin anuncios</figcaption></figure>
+  </div>
+</section>
+
+<footer class="wrap">
+  <p><strong>J Youtube Downloader</strong> · APK para Android</p>
+  <p><a href="https://github.com/Jonayo/jonayodownloader-apk/releases/latest">Descargar la última versión</a></p>
+  <p>Requiere Android 7.0 o superior · Actualizaciones automáticas desde la app</p>
+</footer>
+
+<a class="sticky" href="https://github.com/Jonayo/jonayodownloader-apk/releases/latest">
+  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+  Descarga gratis - Android
+</a>
+
+</body>
+</html>
