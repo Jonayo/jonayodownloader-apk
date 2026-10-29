@@ -4,9 +4,9 @@ Descargas oficiales de la app para Android: baja videos de YouTube y extrae la m
 
 ## Descargar
 
-**[Descargar la última versión (APK)](https://github.com/Jonayo/jonayodownloader-apk/releases/download/v3.0.24/JYDownloader-v3.0.24.apk)**
+**[Descargar la última versión (APK)](https://github.com/Jonayo/jonayodownloader-apk/releases/download/v3.0.28/JYDownloader-v3.0.28.apk)**
 
-- Versión actual: **3.0.24** (2026-10-29)
+- Versión actual: **3.0.28** (2026-10-29)
 - Android 7.0 o superior (API 24) · arm64-v8a y armeabi-v7a
 - Actualizaciones automáticas desde la propia app
 
@@ -21,6 +21,14 @@ También puedes abrir la pestaña **Releases** y bajar el archivo `JYDownloader-
 ## Actualizaciones
 
 Al abrir, la app consulta esta página y, si hay una versión nueva, muestra un aviso con un botón para actualizar en un toque.
+
+## Novedades de la 3.0.28
+
+> **V3.0.28 Por favor, descargar manualmente esta nueva versión.**
+
+- Los botones de cada fila ya no cortan la música que está sonando (antes, tocar "añadir a cola" cambiaba de canción).
+- Descargas: audio en MP3 320, formatos con alternativa automática y botón **Descargar** en barra fija.
+- Actualizador y reportes más confiables: aviso de versión sin depender del límite de consultas de GitHub y diagnóstico que se genera solo al abrir la app.
 
 ## Novedades de la 3.0.24
 
