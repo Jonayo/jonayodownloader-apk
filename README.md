@@ -4,9 +4,9 @@ Descargas oficiales de la app para Android: baja videos de YouTube y extrae la m
 
 ## Descargar
 
-**[Descargar la última versión (APK)](https://github.com/Jonayo/jonayodownloader-apk/releases/download/v3.0.23/JYDownloader-v3.0.23.apk)**
+**[Descargar la última versión (APK)](https://github.com/Jonayo/jonayodownloader-apk/releases/download/v3.0.24/JYDownloader-v3.0.24.apk)**
 
-- Versión actual: **3.0.23** (2026-10-28)
+- Versión actual: **3.0.24** (2026-10-29)
 - Android 7.0 o superior (API 24) · arm64-v8a y armeabi-v7a
 - Actualizaciones automáticas desde la propia app
 
@@ -22,12 +22,13 @@ También puedes abrir la pestaña **Releases** y bajar el archivo `JYDownloader-
 
 Al abrir, la app consulta esta página y, si hay una versión nueva, muestra un aviso con un botón para actualizar en un toque.
 
-## Novedades de la 3.0.23
+## Novedades de la 3.0.24
 
-- La actualización ya termina en el botón **Instalar**: antes la descarga llegaba al 100 % y no aparecía la pantalla para instalar.
-- En Ajustes, "Buscar actualizaciones" → Actualizar ya no se queda sin hacer nada: si el APK ya estaba descargado, lo avisa y abre el instalador.
-- Si el teléfono no muestra su pantalla de confirmación, la app abre el APK para que puedas instalar igual.
-- Siempre hace falta un toque en "Instalar": es una regla de Android para apps fuera de Play.
+- **Tema claro**: en Ajustes puedes elegir entre tema Claro y Oscuro.
+- **Tamaño de letra**: Pequeña, Normal, Grande o Muy grande, pensado para los teléfonos donde la letra se veía demasiado chica. Se guarda sola.
+- **Botón de ecualizador** directo en el reproductor a pantalla completa, al lado del botón de descargar.
+- Los textos sobre botones rojos y las etiquetas de duración ahora siempre se leen bien.
+- El reproductor a pantalla completa sigue en tema oscuro aunque uses el tema claro, para que el video se vea mejor.
 
 ## Novedades de la 3.0.22
 
